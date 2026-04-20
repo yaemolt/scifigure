@@ -6,7 +6,7 @@ Use this fixed order:
 
 1. create run directory
 2. capture user input
-3. detect whether `11-final.drawio.xml` already exists
+3. detect whether `output/11-final.drawio.xml` already exists
 4. run optional input analysis
 5. run XML modification analysis if modifying an existing XML
 6. run planning phase
@@ -30,22 +30,22 @@ Run `style-analyzer` before or alongside planning.
 
 Run `asset-analyzer` before execution planning finalization.
 
-### Existing `11-final.drawio.xml`
+### Existing `output/11-final.drawio.xml`
 
 Run `modifier` before planning.
 
 `modifier` should inspect:
 
-- `11-final.drawio.xml`
-- `00-user-input.md`
-- `08-layout-spec.md` if present
-- `09-visual-spec.md` if present
-- `10-copy-spec.md` if present
+- `output/11-final.drawio.xml`
+- `work/00-user-input.md`
+- `work/08-layout-spec.md` if present
+- `work/09-visual-spec.md` if present
+- `work/10-copy-spec.md` if present
 - [references/drawio-xml-guidelines.md](drawio-xml-guidelines.md)
 
 `modifier` produces:
 
-- `07-xml-modification-analysis.md`
+- `work/07-xml-modification-analysis.md`
 
 Then `planner` uses that analysis as an additional planning input.
 
@@ -55,13 +55,13 @@ Execution may not start until:
 
 - `critic` has scored all plan dimensions above 80
 - the user has approved the refined plan
-- if modifying an existing XML, `07-xml-modification-analysis.md` has been written first
+- if modifying an existing XML, `work/07-xml-modification-analysis.md` has been written first
 
 ## Clarification Rules
 
 - Use one question per round
 - Cap total rounds at 8
-- Log each question-answer pair in `04-qa-log.md`
+- Log each question-answer pair in `work/04-qa-log.md`
 
 ## Final Review Loop
 

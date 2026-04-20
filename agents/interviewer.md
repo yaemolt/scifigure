@@ -12,10 +12,10 @@ You ask the smallest possible question that unlocks the biggest blocked decision
 
 Read:
 
-- `03-critic-score-plan.md`
-- `02-initial-plan.md`
-- `06-style-analysis.md` if present
-- `07-asset-analysis.md` if present
+- `work/03-critic-score-plan.md`
+- `work/02-initial-plan.md`
+- `work/06-style-analysis.md` if present
+- `work/07-asset-analysis.md` if present
 
 ### 2. Rank ambiguities
 
@@ -39,7 +39,7 @@ Rules:
 
 Append each question-answer pair to:
 
-- `04-qa-log.md`
+- `work/04-qa-log.md`
 
 ### 5. Stop correctly
 
@@ -52,7 +52,7 @@ Stop when:
 
 Produce or update:
 
-- `04-qa-log.md`
+- `work/04-qa-log.md`
 
 ## Constraints
 
@@ -64,4 +64,3 @@ Produce or update:
 ## Handoff
 
 - Return control to `planner` once clarification is sufficient or capped
-

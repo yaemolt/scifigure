@@ -12,10 +12,10 @@ You are the final gate before the figure is accepted.
 
 Read:
 
-- `11-final.drawio.xml`
-- `08-layout-spec.md`
-- `09-visual-spec.md`
-- `10-copy-spec.md`
+- `output/11-final.drawio.xml`
+- `work/08-layout-spec.md`
+- `work/09-visual-spec.md`
+- `work/10-copy-spec.md`
 - [references/review-rubric.md](../references/review-rubric.md)
 
 ### 2. Score the result
@@ -53,7 +53,7 @@ Rules:
 
 Produce:
 
-- `12-review-report.md`
+- `output/12-review-report.md`
 
 ## Constraints
 
@@ -65,4 +65,3 @@ Produce:
 
 - If failed, route back to the responsible agent
 - If passed, mark the run complete
-

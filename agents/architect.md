@@ -12,9 +12,9 @@ You decide where everything goes and how the whole figure is organized.
 
 Read:
 
-- `05-refined-plan.md`
-- `06-style-analysis.md` if present
-- `07-asset-analysis.md` if present
+- `work/05-refined-plan.md`
+- `work/06-style-analysis.md` if present
+- `work/07-asset-analysis.md` if present
 - [references/workflow.md](../references/workflow.md)
 
 ### 2. Define the canvas system
@@ -47,7 +47,7 @@ Structure the layout so downstream XML can remain easy to edit.
 
 Produce:
 
-- `08-layout-spec.md`
+- `work/08-layout-spec.md`
 
 ## Constraints
 
@@ -58,4 +58,3 @@ Produce:
 ## Handoff
 
 - Send the layout spec to `drawer`, `writer`, and `xml-drawer`
-

@@ -15,10 +15,10 @@ When this skill is invoked:
    - text-only request
    - reference-style image input
    - reusable `png/svg` asset input
-   - existing run with `11-final.drawio.xml` that needs modification
+   - existing run with `output/11-final.drawio.xml` that needs modification
 2. Create a run directory using the pattern from [references/run-artifacts.md](references/run-artifacts.md).
-3. Write the raw request into `00-user-input.md`.
-4. If `11-final.drawio.xml` already exists in the run directory, run `modifier` before planning.
+3. Write the raw request into `work/00-user-input.md`.
+4. If `output/11-final.drawio.xml` already exists in the run directory, run `modifier` before planning.
 5. Run the planning phase before any execution phase work.
 6. Enter execution only after the planning gate passes and the user approves the refined plan.
 
@@ -31,19 +31,19 @@ The workflow is:
 1. Optional preprocessing
    - use [references/style-analysis-rubric.md](references/style-analysis-rubric.md) if style reference images are provided
    - use [references/asset-analysis-rubric.md](references/asset-analysis-rubric.md) if reusable `png/svg` assets are provided
-   - use `modifier` if the run already contains `11-final.drawio.xml`
+   - use `modifier` if the run already contains `output/11-final.drawio.xml`
 2. Planning phase
-   - `modifier` creates `07-xml-modification-analysis.md` when modifying an existing XML
-   - `planner` creates `02-initial-plan.md`
+   - `modifier` creates `work/07-xml-modification-analysis.md` when modifying an existing XML
+   - `planner` creates `work/02-initial-plan.md`
    - `critic` scores the plan using [references/planning-rubric.md](references/planning-rubric.md)
    - if any score is `<= 80`, `interviewer` runs one-question-at-a-time clarification
-   - `planner` creates `05-refined-plan.md`
+   - `planner` creates `work/05-refined-plan.md`
    - user reviews and responds with `通过` or `修改意见`
 3. Execution phase
-   - `architect` creates `08-layout-spec.md`
-   - `drawer` creates `09-visual-spec.md`
-   - `writer` creates `10-copy-spec.md`
-   - `xml-drawer` creates `11-final.drawio.xml`
+   - `architect` creates `work/08-layout-spec.md`
+   - `drawer` creates `work/09-visual-spec.md`
+   - `writer` creates `work/10-copy-spec.md`
+   - `xml-drawer` creates `output/11-final.drawio.xml`
    - `reviewer` scores the result using [references/review-rubric.md](references/review-rubric.md)
 4. Revision loop
    - layout issues route to `architect`
@@ -72,7 +72,7 @@ Use these character files as the authoritative agent contracts:
 - Work in the user's input language unless the user explicitly asks to change it.
 - Favor explicit intermediate documents over hidden reasoning.
 - Favor editable `draw.io` structures over visually dense but hard-to-edit output.
-- If `11-final.drawio.xml` already exists, diagnose it before re-planning.
+- If `output/11-final.drawio.xml` already exists, diagnose it before re-planning.
 - Do not skip the planning gate.
 - Do not ask more than one clarification question per round.
 - Stop clarification after 8 rounds maximum.

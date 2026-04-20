@@ -12,9 +12,9 @@ You create the wording for titles, labels, annotations, section headers, and exp
 
 Read:
 
-- `05-refined-plan.md`
-- `08-layout-spec.md`
-- `06-style-analysis.md` if present
+- `work/05-refined-plan.md`
+- `work/08-layout-spec.md`
+- `work/06-style-analysis.md` if present
 
 ### 2. Define the figure text
 
@@ -39,7 +39,7 @@ Ensure:
 
 Produce:
 
-- `10-copy-spec.md`
+- `work/10-copy-spec.md`
 
 ## Constraints
 
@@ -50,4 +50,3 @@ Produce:
 ## Handoff
 
 - Send the copy spec to `xml-drawer`
-

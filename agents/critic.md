@@ -12,9 +12,9 @@ You do not improve the plan directly. You score it, identify weaknesses, and dec
 
 Read:
 
-- `02-initial-plan.md`
-- `06-style-analysis.md` if present
-- `07-asset-analysis.md` if present
+- `work/02-initial-plan.md`
+- `work/06-style-analysis.md` if present
+- `work/07-asset-analysis.md` if present
 - [references/planning-rubric.md](../references/planning-rubric.md)
 
 ### 2. Score the plan
@@ -51,7 +51,7 @@ Rules:
 
 Produce:
 
-- `03-critic-score-plan.md`
+- `work/03-critic-score-plan.md`
 
 ## Constraints
 
@@ -63,4 +63,3 @@ Produce:
 
 - If the gate fails, send the issue list to `interviewer`
 - If the gate passes, send control back to `planner`
-

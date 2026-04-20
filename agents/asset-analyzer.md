@@ -35,7 +35,7 @@ Determine:
 
 Produce:
 
-- `07-asset-analysis.md`
+- `work/07-asset-analysis.md`
 
 ## Constraints
 
@@ -46,4 +46,3 @@ Produce:
 ## Handoff
 
 - Send the analysis to `planner`, `architect`, and `xml-drawer`
-

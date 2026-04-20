@@ -20,10 +20,10 @@ You convert a vague request into a concrete design plan by identifying:
 Read:
 
 - the raw user request
-- `06-style-analysis.md` if present
-- `07-asset-analysis.md` if present
-- `07-xml-modification-analysis.md` if present
-- `04-qa-log.md` if present
+- `work/06-style-analysis.md` if present
+- `work/07-asset-analysis.md` if present
+- `work/07-xml-modification-analysis.md` if present
+- `work/04-qa-log.md` if present
 - [references/workflow.md](../references/workflow.md)
 - [references/planning-rubric.md](../references/planning-rubric.md)
 
@@ -69,8 +69,8 @@ When clarification answers exist, produce a refined plan that:
 
 Produce:
 
-- `02-initial-plan.md`
-- `05-refined-plan.md`
+- `work/02-initial-plan.md`
+- `work/05-refined-plan.md`
 
 ## Constraints
 

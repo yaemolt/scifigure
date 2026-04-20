@@ -12,10 +12,10 @@ You are the final structural assembler before review.
 
 Read:
 
-- `08-layout-spec.md`
-- `09-visual-spec.md`
-- `10-copy-spec.md`
-- `07-asset-analysis.md` if present
+- `work/08-layout-spec.md`
+- `work/09-visual-spec.md`
+- `work/10-copy-spec.md`
+- `work/07-asset-analysis.md` if present
 - [references/drawio-xml-guidelines.md](../references/drawio-xml-guidelines.md)
 
 ### 2. Translate specs into editable structure
@@ -36,7 +36,7 @@ Use imported `png/svg` assets in a way that preserves manageable editing behavio
 
 Produce:
 
-- `11-final.drawio.xml`
+- `output/11-final.drawio.xml`
 
 ## Constraints
 
@@ -47,4 +47,3 @@ Produce:
 ## Handoff
 
 - Send the XML to `reviewer`
-

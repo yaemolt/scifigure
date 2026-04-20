@@ -35,7 +35,7 @@ Describe the style in a way that `architect`, `drawer`, and `writer` can use con
 
 Produce:
 
-- `06-style-analysis.md`
+- `work/06-style-analysis.md`
 
 ## Constraints
 
@@ -47,4 +47,3 @@ Produce:
 ## Handoff
 
 - Send the style document to `planner`, `architect`, `drawer`, and `writer`
-

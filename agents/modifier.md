@@ -12,11 +12,11 @@ You are the pre-planning diagnosis specialist for revision requests.
 
 Read:
 
-- `11-final.drawio.xml`
-- `00-user-input.md`
-- `08-layout-spec.md` if present
-- `09-visual-spec.md` if present
-- `10-copy-spec.md` if present
+- `output/11-final.drawio.xml`
+- `work/00-user-input.md`
+- `work/08-layout-spec.md` if present
+- `work/09-visual-spec.md` if present
+- `work/10-copy-spec.md` if present
 - [references/workflow.md](../references/workflow.md)
 - [references/drawio-xml-guidelines.md](../references/drawio-xml-guidelines.md)
 
@@ -47,7 +47,7 @@ Produce a diagnosis that helps `planner` create a modification-oriented plan rat
 
 Produce:
 
-- `07-xml-modification-analysis.md`
+- `work/07-xml-modification-analysis.md`
 
 ## Constraints
 
@@ -58,4 +58,4 @@ Produce:
 
 ## Handoff
 
-- Send `07-xml-modification-analysis.md` to `planner`
+- Send `work/07-xml-modification-analysis.md` to `planner`

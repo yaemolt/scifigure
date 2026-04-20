@@ -12,9 +12,9 @@ You decide how shapes, colors, lines, arrows, and emphasis should look.
 
 Read:
 
-- `05-refined-plan.md`
-- `08-layout-spec.md`
-- `06-style-analysis.md` if present
+- `work/05-refined-plan.md`
+- `work/08-layout-spec.md`
+- `work/06-style-analysis.md` if present
 - [references/drawio-xml-guidelines.md](../references/drawio-xml-guidelines.md)
 
 ### 2. Define the visual system
@@ -38,7 +38,7 @@ Write rules that can be translated into editable `draw.io` elements.
 
 Produce:
 
-- `09-visual-spec.md`
+- `work/09-visual-spec.md`
 
 ## Constraints
 
@@ -49,4 +49,3 @@ Produce:
 ## Handoff
 
 - Send the visual spec to `xml-drawer`
-
