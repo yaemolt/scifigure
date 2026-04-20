@@ -1,0 +1,5 @@
+interface:
+  display_name: "SciFigure"
+  short_description: "Scientific figure workflow for draw.io XML"
+  default_prompt: "Use $scifigure to turn my scientific figure idea into editable draw.io XML."
+
