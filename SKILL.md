@@ -15,10 +15,12 @@ When this skill is invoked:
    - text-only request
    - reference-style image input
    - reusable `png/svg` asset input
+   - existing run with `11-final.drawio.xml` that needs modification
 2. Create a run directory using the pattern from [references/run-artifacts.md](references/run-artifacts.md).
 3. Write the raw request into `00-user-input.md`.
-4. Run the planning phase before any execution phase work.
-5. Enter execution only after the planning gate passes and the user approves the refined plan.
+4. If `11-final.drawio.xml` already exists in the run directory, run `modifier` before planning.
+5. Run the planning phase before any execution phase work.
+6. Enter execution only after the planning gate passes and the user approves the refined plan.
 
 ## Workflow
 
@@ -29,7 +31,9 @@ The workflow is:
 1. Optional preprocessing
    - use [references/style-analysis-rubric.md](references/style-analysis-rubric.md) if style reference images are provided
    - use [references/asset-analysis-rubric.md](references/asset-analysis-rubric.md) if reusable `png/svg` assets are provided
+   - use `modifier` if the run already contains `11-final.drawio.xml`
 2. Planning phase
+   - `modifier` creates `07-xml-modification-analysis.md` when modifying an existing XML
    - `planner` creates `02-initial-plan.md`
    - `critic` scores the plan using [references/planning-rubric.md](references/planning-rubric.md)
    - if any score is `<= 80`, `interviewer` runs one-question-at-a-time clarification
@@ -56,6 +60,7 @@ Use these character files as the authoritative agent contracts:
 - [agents/interviewer.md](agents/interviewer.md)
 - [agents/style-analyzer.md](agents/style-analyzer.md)
 - [agents/asset-analyzer.md](agents/asset-analyzer.md)
+- [agents/modifier.md](agents/modifier.md)
 - [agents/architect.md](agents/architect.md)
 - [agents/drawer.md](agents/drawer.md)
 - [agents/writer.md](agents/writer.md)
@@ -67,6 +72,7 @@ Use these character files as the authoritative agent contracts:
 - Work in the user's input language unless the user explicitly asks to change it.
 - Favor explicit intermediate documents over hidden reasoning.
 - Favor editable `draw.io` structures over visually dense but hard-to-edit output.
+- If `11-final.drawio.xml` already exists, diagnose it before re-planning.
 - Do not skip the planning gate.
 - Do not ask more than one clarification question per round.
 - Stop clarification after 8 rounds maximum.
@@ -96,4 +102,3 @@ Before considering the skill package complete:
 
 1. generate `agents/openai.yaml`
 2. run `scripts/quick_validate.py` from the `skill-creator` skill against this skill directory
-

@@ -50,12 +50,14 @@
 - 纯文本需求
 - 参考风格图片
 - 可复用 `PNG/SVG` 素材
+- 当前运行目录中已存在标准产物 `11-final.drawio.xml`
 
 对应策略：
 
 - 纯文本：直接进入规划阶段
 - 有参考图：先做风格分析，或与规划并行进行
 - 有素材：在执行前补做资产分析
+- 已有 `11-final.drawio.xml`：先进入修改模式，先分析已有 XML 的问题，再进入规划
 
 ### 2. 创建一次运行目录
 
@@ -84,6 +86,21 @@ runs/2026-04-20-signaling-pathway/
 ### 4. 先过规划门
 
 进入执行前，必须先完成规划阶段：
+
+如果当前运行目录已经有标准产物 `11-final.drawio.xml`，则先增加一个修改分析步骤：
+
+1. `modifier` 读取现有 `11-final.drawio.xml`
+2. `modifier` 结合用户新的修改需求，输出 `07-xml-modification-analysis.md`
+3. `planner` 再基于原始需求、已有分析结果和修改目标生成计划
+
+这个步骤的作用是先判断：
+
+- 现有 XML 哪些地方可以保留
+- 哪些结构需要重建
+- 哪些问题属于布局、视觉、文案或可编辑性问题
+- 这次修改的重点应该放在哪里
+
+然后再进入常规规划门：
 
 1. `planner` 生成 `02-initial-plan.md`
 2. `critic` 按 `references/planning-rubric.md` 打分
@@ -130,6 +147,7 @@ runs/2026-04-20-signaling-pathway/
 05-refined-plan.md
 06-style-analysis.md
 07-asset-analysis.md
+07-xml-modification-analysis.md
 08-layout-spec.md
 09-visual-spec.md
 10-copy-spec.md
@@ -139,7 +157,7 @@ runs/2026-04-20-signaling-pathway/
 
 说明：
 
-- `06-style-analysis.md` 和 `07-asset-analysis.md` 是可选文件
+- `06-style-analysis.md`、`07-asset-analysis.md` 和 `07-xml-modification-analysis.md` 都是可选文件
 - 文件名建议保持稳定，方便自动化检查和人工审阅
 - 全部文档应尽量使用用户输入语言
 

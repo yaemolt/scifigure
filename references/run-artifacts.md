@@ -14,6 +14,7 @@ Create a run directory using a stable pattern such as:
 - `05-refined-plan.md`
 - `06-style-analysis.md`
 - `07-asset-analysis.md`
+- `07-xml-modification-analysis.md`
 - `08-layout-spec.md`
 - `09-visual-spec.md`
 - `10-copy-spec.md`
@@ -23,6 +24,6 @@ Create a run directory using a stable pattern such as:
 ## Rules
 
 - Missing optional stages may omit their files
+- Use `07-xml-modification-analysis.md` only when revising an existing `11-final.drawio.xml`
 - File names should remain stable across runs
 - All documents should follow the user's input language
-

@@ -22,6 +22,7 @@ Read:
 - the raw user request
 - `06-style-analysis.md` if present
 - `07-asset-analysis.md` if present
+- `07-xml-modification-analysis.md` if present
 - `04-qa-log.md` if present
 - [references/workflow.md](../references/workflow.md)
 - [references/planning-rubric.md](../references/planning-rubric.md)
@@ -37,6 +38,7 @@ Identify:
 - the components that must appear
 - the process or relationship flow
 - the likely annotation needs
+- the gap between the current XML and the requested revision if modifying an existing figure
 
 ### 3. Build the plan
 
@@ -49,6 +51,8 @@ Define:
 - text requirements
 - style assumptions
 - asset constraints
+- what to preserve from the existing XML if modification analysis exists
+- what to rebuild or simplify from the existing XML if modification analysis exists
 - XML and editability constraints
 - known uncertainties
 
@@ -79,4 +83,3 @@ Produce:
 
 - Send the initial plan to `critic`
 - Send the refined plan to the user for approval
-
